@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>유흥 업종별 요금 구조 비교: 주대, TC, 룸티의 실질적 차이 | 유흥 용어 정리</title>
+    <meta name="description" content="셔츠룸, 룸싸롱, 텐프로, 가라오케 등 복잡한 유흥 업종별 용어와 주대, TC, 룸티 등의 요금 체계를 투명하게 비교 분석하는 전문 정보 사전식 블로그입니다.">
+    <meta name="keywords" content="유흥 용어 정리, 룸티, 테이블차지, TC, 주대 계산법, 업종별 차이">
+    <link rel="canonical" href="https://index.hwagok-karaoke-insider.xyz/blog-2.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="유흥 업종별 요금 구조 비교: 주대, TC, 룸티의 실질적 차이">
+    <meta property="og:description" content="복잡한 유흥 업계의 가격 산정 방식을 철저히 해부합니다. 주대, TC, 룸티의 진짜 의미와 업종별 청구 방식의 차이점을 확인하세요.">
+    <meta property="og:url" content="https://index.hwagok-karaoke-insider.xyz/blog-2.html">
+
+    <style>
+        :root {
+            --bg-dark: #09090b;
+            --bg-card: #121214;
+            --accent-gold: #d4af37;
+            --accent-gold-hover: #f3cf7a;
+            --text-light: #f4f4f5;
+            --text-muted: #a1a1aa;
+            --border-color: #27272a;
+            --font-serif: 'Playfair Display', 'Noto Serif KR', serif;
+            --font-sans: 'Inter', 'Noto Sans KR', sans-serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            font-family: var(--font-sans);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Typography Helper Classes */
+        .serif-title {
+            font-family: var(--font-serif);
+            font-weight: 700;
+            letter-spacing: -0.03em;
+        }
+
+        /* Header & Navigation */
+        header.r-hero-raj9 {
+            border-bottom: 1px solid var(--border-color);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            background-color: rgba(9, 9, 11, 0.9);
+            backdrop-filter: blur(10px);
+        }
+
+        .m-wrap-pmnn-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        .x-head-4g6v {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .brand-logo {
+            font-family: var(--font-serif);
+            font-size: 1.25rem;
+            font-weight: 800;
+            color: var(--accent-gold);
+            text-decoration: none;
+            letter-spacing: 1px;
+        }
+
+        .m-wrap-pmnn-menu {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        .m-wrap-pmnn-link {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .m-wrap-pmnn-link:hover, .m-wrap-pmnn-link.active {
+            color: var(--accent-gold);
+        }
+
+        /* Editorial Hero Section */
+        .editorial-hero {
+            padding: 6rem 0 4rem;
+            border-bottom: 1px solid var(--border-color);
+            position: relative;
+        }
+
+        .editorial-hero::before {
+            content: "COMPARISON";
+            position: absolute;
+            top: 10%;
+            right: 5%;
+            font-size: 10vw;
+            font-family: var(--font-serif);
+            font-weight: 900;
+            color: rgba(255, 255, 255, 0.02);
+            pointer-events: none;
+            line-height: 1;
+        }
+
+        .editorial-tag {
+            display: inline-block;
+            font-size: 0.8rem;
+            color: var(--accent-gold);
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+
+        .editorial-title {
+            font-size: clamp(2.2rem, 5vw, 3.8rem);
+            line-height: 1.15;
+            margin-bottom: 2rem;
+            color: var(--text-light);
+        }
+
+        .editorial-lead {
+            font-size: clamp(1.1rem, 2vw, 1.3rem);
+            color: var(--text-muted);
+            max-width: 800px;
+            font-weight: 300;
+            border-left: 3px solid var(--accent-gold);
+            padding-left: 1.5rem;
+        }
+
+        /* Bold Statement Block */
+        .statement-block {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            padding: 3rem;
+            margin: 4rem 0;
+            position: relative;
+        }
+
+        .statement-block h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--accent-gold);
+        }
+
+        .statement-block p {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+        }
+
+        /* Comparison Grid */
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 4rem 0;
+        }
+
+        .comp-card {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-color);
+            padding: 2.5rem;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .comp-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--accent-gold);
+        }
+
+        .comp-card-header {
+            margin-bottom: 2rem;
+        }
+
+        .comp-card-type {
+            font-size: 0.75rem;
+            color: var(--accent-gold);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .comp-card-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: var(--text-light);
+        }
+
+        .comp-card-body ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .comp-card-body li {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            padding-bottom: 0.8rem;
+        }
+
+        .comp-card-body li strong {
+            color: var(--accent-gold);
+            display: block;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            margin-bottom: 0.2rem;
+        }
+
+        .comp-card-body li span {
+            color: var(--text-light);
+            font-size: 0.95rem;
+        }
+
+        /* Editorial Table Section */
+        .table-section {
+            margin: 6rem 0;
+        }
+
+        .section-header {
+            margin-bottom: 3rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1rem;
+        }
+
+        .section-header p {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+            border: 1px solid var(--border-color);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: left;
+            min-width: 800px;
+        }
+
+        th, td {
+            padding: 1.25rem 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: rgba(255, 255, 255, 0.02);
+            color: var(--accent-gold);
+            font-weight: 600;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        td {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+        }
+
+        tr:hover td {
+            color: var(--text-light);
+            background-color: rgba(255, 255, 255, 0.01);
+        }
+
+        /* Deep Dive Analysis Section */
+        .deep-dive {
+            padding: 6rem 0;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .dive-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        @media (max-width: 768px) {
+            .dive-content {
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+            }
+        }
+
+        .dive-text h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            color: var(--text-light);
+        }
+
+        .dive-text p {
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+        }
+
+        .dive-text p strong {
+            color: var(--text-light);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #050507;
+            border-top: 1px solid var(--border-color);
+            padding: 4rem 0;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-col h4 {
+            color: var(--text-light);
+            font-family: var(--font-serif);
+            margin-bottom: 1.2rem;
+            font-size: 1rem;
+        }
+
+        .footer-col ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        .footer-col a {
+            color: var(--text-muted);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .footer-col a:hover {
+            color: var(--accent-gold);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid var(--border-color);
+            padding-top: 2rem;
+            text-align: center;
+            font-size: 0.8rem;
+        }
+
+        /* Hamburger Menu for Mobile */
+        .menu-toggle {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--text-light);
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .m-wrap-pmnn-menu {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                width: 100%;
+                background-color: var(--bg-dark);
+                border-bottom: 1px solid var(--border-color);
+                padding: 1.5rem;
+                gap: 1.5rem;
+            }
+
+            .m-wrap-pmnn-menu.active {
+                display: flex;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="r-hero-raj9">
+        <div class="m-wrap-pmnn-container">
+            <div class="x-head-4g6v">
+                <a href="https://index.hwagok-karaoke-insider.xyz" class="brand-logo serif-title">INSIDER DICTIONARY</a>
+                <button class="menu-toggle" aria-label="메뉴 열기" onclick="toggleMenu()">☰</button>
+                <ul class="m-wrap-pmnn-menu" id="mobileMenu">
+                    <li><a href="https://index.hwagok-karaoke-insider.xyz" class="m-wrap-pmnn-link">홈</a></li>
+                    <li><a href="https://index.hwagok-karaoke-insider.xyz/comparison" class="m-wrap-pmnn-link active">업종별 비교</a></li>
+                    <li><a href="https://index.hwagok-karaoke-insider.xyz#dictionary" class="m-wrap-pmnn-link">용어 사전</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- Editorial Hero Section -->
+    <main class="m-wrap-pmnn-container">
+        <section class="editorial-hero">
+            <span class="editorial-tag">Structure &amp; Analysis</span>
+            <h1 class="editorial-title serif-title">화려한 간판 뒤에 숨겨진<br>정산 메커니즘의 실체</h1>
+            <p class="editorial-lead">
+                복잡하고 불투명한 유흥 업계의 요금 체계. 주대, TC, 룸티라는 모호한 단어들의 조합 속에서 소비자는 종종 혼란에 빠집니다. 각 업종별 정산 방식의 명확한 차이점을 파악하고 구조적 메커니즘을 투명하게 분석합니다.
+            </p>
+        </section>
+
+        <!-- Bold Statement Block -->
+        <section class="statement-block">
+            <h3 class="serif-title">"모호한 정산은 정보의 비대칭성에서 시작됩니다."</h3>
+            <p>
+                단순히 '싸다' 혹은 '비싸다'라는 감정적 접근에서 벗어나야 합니다. 각 비즈니스 모델이 인적 자원(TC)과 공간적 자원(Room Charge)을 어떻게 결합하여 수익을 창출하는지 이해하는 것만이 불필요한 지출을 방지하는 유일한 해법입니다.
+            </p>
+        </section>
+
+        <!-- Comparison Grid -->
+        <section class="comparison-grid">
+            <!-- Card 1: Shirts Room -->
+            <div class="comp-card">
+                <div class="comp-card-header">
+                    <span class="comp-card-type">Systematic Model A</span>
+                    <h3 class="comp-card-title serif-title">셔츠룸</h3>
+                </div>
+                <div class="comp-card-body">
+                    <ul>
+                        <li>
+                            <strong>기본 주대 구조</strong>
+                            <span>기본 세트 요금에 양주와 음료, 기본 안주가 포함되어 정찰제 형태로 운영되는 경우가 많습니다.</span>
+                        </li>
+                        <li>
+                            <strong>TC (Table Charge)</strong>
+                            <span>시간당(통상 60분~90분 단위) 정해진 고정 금액이 청구되는 구조를 지니고 있습니다.</span>
+                        </li>
+                        <li>
+                            <strong>공간 비용 (룸티)</strong>
+                            <span>대체로 기본 주대에 포함되어 있거나, 첫 타임에 소액의 고정 룸티가 추가되는 형태로 단순합니다.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Card 2: Room Salon -->
+            <div class="comp-card">
+                <div class="comp-card-header">
+                    <span class="comp-card-type">Systematic Model B</span>
+                    <h3 class="comp-card-title serif-title">정통 룸싸롱</h3>
+                </div>
+                <div class="comp-card-body">
+                    <ul>
+                        <li>
+                            <strong>기본 주대 구조</strong>
+                            <span>제공되는 술의 등급(연산)과 세트 구성에 따라 주대의 편차가 크며, 기본 안주 구성이 무거운 편입니다.</span>
+                        </li>
+                        <li>
+                            <strong>TC (Table Charge)</strong>
+                            <span>시간 단위 청구가 기본이나, 묶음 형태(예: 세션 단위)의 변칙적 청구 방식이 결합되기도 합니다.</span>
+                        </li>
+                        <li>
+                            <strong>공간 비용 (룸티)</strong>
+                            <span>공간 제공 자체에 대한 비용(룸티)을 명시적으로 분리하여 청구하는 경향이 뚜렷합니다.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Card 3: Karaoke -->
+            <div class="comp-card">
+                <div class="comp-card-header">
+                    <span class="comp-card-type">Systematic Model C</span>
+                    <h3 class="comp-card-title serif-title">가라오케</h3>
+                </div>
+                <div class="comp-card-body">
+                    <ul>
+                        <li>
+                            <strong>기본 주대 구조</strong>
+                            <span>일반적인 대중 주류 및 위스키를 기반으로 하며, 타 업종 대비 상대적으로 낮은 주대 진입 장벽을 가집니다.</span>
+                        </li>
+                        <li>
+                            <strong>TC (Table Charge)</strong>
+                            <span>제공되는 인적 서비스의 형태에 따라 선택적으로 청구되며, 고정 비율이 아닌 유동적 설계가 많습니다.</span>
+                        </li>
+                        <li>
+                            <strong>공간 비용 (룸티)</strong>
+                            <span>시간당 룸 대여 요금이 철저히 계산되어 청구되거나, 특정 세트 주문 시 면제되는 구조를 보입니다.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Editorial Table Section -->
+        <section class="table-section">
+            <div class="section-header">
+                <span class="editorial-tag">Metrics &amp; Comparisons</span>
+                <h2 class="serif-title">한눈에 보는 재무 구조 분석</h2>
+                <p>각 업종별로 예산 산정 시 최우선적으로 고려해야 할 핵심 변수들을 정리했습니다.</p>
+            </div>
+            
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>업종 구분</th>
+                            <th>주대 (Set Base)</th>
+                            <th>TC (Table Charge)</th>
+                            <th>룸티 (Room Fee)</th>
+                            <th>비용 구조 특징</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="color: var(--text-light); font-weight: 600;">텐프로 / 하이앤드</td>
+                            <td>매우 높음 (연산 기준)</td>
+                            <td>묶음형/더블 방식 적용</td>
+                            <td>필수 청구 (고가)</td>
+                            <td>시간 대비 누적 비용 상승률이 매우 가파름</td>
+                        </tr>
+                        <tr>
+                            <td style="color: var(--text-light); font-weight: 600;">셔츠룸 / 레깅스</td>
+                            <td>중간 (정찰제 중심)</td>
+                            <td>시간제 고정 청구</td>
+                            <td>미청구 혹은 소액 고정</td>
+                            <td>초기 예산 예측이 가장 용이한 정량적 구조</td>
+                        </tr>
+                        <tr>
+                            <td style="color: var(--text-light); font-weight: 600;">퍼블릭 / 룸싸롱</td>
+                            <td>중간~높음</td>
+                            <td>시간제 고정 청구</td>
+                            <td>필수 혹은 선택적 청구</td>
+                            <td>서비스 이용 시간과 주종 선택에 따라 유동적</td>
+                        </tr>
+                        <tr>
+                            <td style="color: var(--text-light); font-weight: 600;">가라오케</td>
+                            <td>낮음~중간</td>
+                            <td>선택적 청구</td>
+                            <td>시간제 청구 (엄격함)</td>
+                            <td>공간 이용 자체에 초점이 맞춰진 공간 중심 구조</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Deep Dive Analysis Section -->
+        <section class="deep-dive">
+            <div class="dive-content">
+                <div class="dive-text">
+                    <h3 class="serif-title">주대, TC, 룸티의 독립성과 상호작용</h3>
+                    <p>
+                        많은 소비자들이 범하는 오류 중 하나는 <strong>"주대가 낮으니 전체 정산액도 낮을 것"</strong>이라는 착각입니다. 유흥 업종의 총비용(Total Cost)은 다음의 단순한 공식으로 결정됩니다.
+                    </p>
+                    <p style="background: rgba(255,255,255,0.02); padding: 1.5rem; border-left: 2px solid var(--accent-gold); font-family: var(--font-serif); font-size: 1.1rem; color: var(--text-light);">
+                        [총비용] = [기본 주대] + [TC × 시간 × 인원] + [룸티]
+                    </p>
+                    <p>
+                        예컨대, 주대가 저렴한 가라오케라 할지라도 이용 시간이 길어지고 인적 서비스(TC)가 추가될 경우, 주대가 다소 높더라도 고정 단타성으로 운영되는 셔츠룸의 총합 비용보다 더 많은 금액이 청구될 수 있습니다.
+                    </p>
+                </div>
+                <div class="dive-text">
+                    <h3 class="serif-title">지출의 변동성을 줄이는 실전 가이드</h3>
+                    <p>
+                        업종을 선택하고 방문을 계획할 때 반드시 사전 파악해야 할 요소는 <strong>"추가 시간에 따른 비용 증가율"</strong>입니다. 
+                    </p>
+                    <p>
+                        1. <strong>고정형 정산</strong>을 원한다면 시간별 TC 증액이 엄격하게 제한되거나 정찰제로 묶여 있는 셔츠룸 계열이 유리합니다.<br>
+                        2. <strong>장시간 대화 및 공간 점유</strong>가 목적이라면, 인적 서비스 비중을 낮추고 룸티 중심으로 정산되는 정통 가라오케 구조를 택하는 것이 경제적입니다.<br>
+                        3. <strong>하이앤드급</strong>으로 갈수록 시간당 비용 증가 속도가 기하급수적으로 빨라지므로, 시간 통제가 필수적입니다.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="m-wrap-pmnn-container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>INSIDER DICTIONARY</h4>
+                    <p style="font-size: 0.8rem; line-height: 1.8; margin-top: 1rem;">
+                        유흥 업계의 모호하고 복잡한 용어체계를 투명하게 정리하여 올바른 소비 기준을 제시하는 전문 정보 블로그입니다.
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>주요 카테고리</h4>
+                    <ul>
+                        <li><a href="https://index.hwagok-karaoke-insider.xyz">홈으로 가기</a></li>
+                        <li><a href="https://index.hwagok-karaoke-insider.xyz/comparison">업종별 요금 비교</a></li>
+                        <li><a href="https://index.hwagok-karaoke-insider.xyz#dictionary">유흥 용어 사전</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>안내 사항</h4>
+                    <p style="font-size: 0.8rem; line-height: 1.8;">
+                        본 사이트에서 제공하는 모든 정보는 업계 전반에 통용되는 개념적 구조와 용어 정리를 다루는 학술적 분석 자료이며, 특정 업소에 대한 광고나 보증을 수행하지 않습니다.
+                    </p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 INSIDER DICTIONARY. All Rights Reserved. 무단 전재 및 재배포 금지.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("mobileMenu");
+            if (menu.classList.contains("active")) {
+                menu.classList.remove("active");
+            } else {
+                menu.classList.add("active");
+            }
+        }
+    </script>
+</body>
+</html>

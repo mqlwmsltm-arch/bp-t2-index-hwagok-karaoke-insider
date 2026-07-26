@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>소개 — 유흥 용어 정리 및 구조적 분석 전문 블로그</title>
+    <meta name="description" content="셔츠룸, 룸싸롱, 텐프로, 가라오케 등 복잡한 유흥 업종별 용어와 주대, TC, 룸티 등의 요금 체계를 투명하게 비교 분석하는 전문 정보 사전식 블로그의 운영 철학과 분석 기준을 소개합니다.">
+    <meta name="keywords" content="유흥 용어 정리, 룸티, 테이블차지, TC, 주대 계산법, 업종별 차이, 블로그 소개">
+    <link rel="canonical" href="https://index.hwagok-karaoke-insider.xyz/about.html">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="소개 — 유흥 용어 정리 및 구조적 분석 전문 블로그">
+    <meta property="og:description" content="셔츠룸, 룸싸롱, 텐프로, 가라오케 등 복잡한 유흥 업종별 용어와 주대, TC, 룸티 등의 요금 체계를 투명하게 비교 분석하는 전문 정보 사전식 블로그의 운영 철학과 분석 기준을 소개합니다.">
+    <meta property="og:url" content="https://index.hwagok-karaoke-insider.xyz/about.html">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* Base Reset & Variables */
+        :root {
+            --color-bg-primary: #0a0a0a;
+            --color-bg-secondary: #121212;
+            --color-bg-tertiary: #1a1a1a;
+            --color-accent: #c5a880; /* Editorial Gold */
+            --color-accent-hover: #e5c9a2;
+            --color-text-primary: #ffffff;
+            --color-text-secondary: #a0a0a0;
+            --color-text-muted: #666666;
+            --color-border: #262626;
+            --font-editorial: 'Cinzel', serif;
+            --font-sans: 'Noto Sans KR', sans-serif;
+            --transition-speed: 0.3s;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--color-bg-primary);
+            color: var(--color-text-primary);
+            font-family: var(--font-sans);
+            line-height: 1.6;
+            letter-spacing: -0.02em;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* Typography Helper Classes */
+        .text-editorial {
+            font-family: var(--font-editorial);
+        }
+        .text-accent {
+            color: var(--color-accent);
+        }
+
+        /* Header & Navigation */
+        header.r-hero-raj9 {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+            background-color: rgba(10, 10, 10, 0.95);
+            border-bottom: 1px solid var(--color-border);
+            backdrop-filter: blur(10px);
+        }
+
+        .m-wrap-pmnn-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px;
+        }
+
+        .x-head-4g6v {
+            font-family: var(--font-editorial);
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--color-text-primary);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .x-head-4g6v span {
+            color: var(--color-accent);
+        }
+
+        .m-wrap-pmnn-menu {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+        }
+
+        .m-wrap-pmnn-link {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: var(--color-text-secondary);
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: color var(--transition-speed);
+            position: relative;
+            padding: 8px 0;
+        }
+
+        .m-wrap-pmnn-link:hover,
+        .m-wrap-pmnn-link.active {
+            color: var(--color-accent);
+        }
+
+        .m-wrap-pmnn-link::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background-color: var(--color-accent);
+            transition: width var(--transition-speed);
+        }
+
+        .m-wrap-pmnn-link:hover::after,
+        .m-wrap-pmnn-link.active::after {
+            width: 100%;
+        }
+
+        /* Mobile Hamburger Menu */
+        .m-nav-2995-label {
+            display: none;
+            cursor: pointer;
+            flex-direction: column;
+            gap: 6px;
+            z-index: 1001;
+        }
+
+        .m-nav-2995-label span {
+            display: block;
+            width: 24px;
+            height: 2px;
+            background-color: var(--color-text-primary);
+            transition: transform var(--transition-speed), opacity var(--transition-speed);
+        }
+
+        #menu-toggle {
+            display: none;
+        }
+
+        /* Hero Section (Editorial Style) */
+        .editorial-hero {
+            padding-top: 180px;
+            padding-bottom: 100px;
+            border-bottom: 1px solid var(--color-border);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .editorial-hero::before {
+            content: "INSIDER";
+            position: absolute;
+            bottom: -20px;
+            right: -20px;
+            font-family: var(--font-editorial);
+            font-size: 15vw;
+            font-weight: 900;
+            color: rgba(255, 255, 255, 0.02);
+            line-height: 0.8;
+            pointer-events: none;
+            user-select: none;
+        }
+
+        .hero-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 64px;
+            align-items: start;
+        }
+
+        .hero-title-area h1 {
+            font-family: var(--font-editorial);
+            font-size: 3rem;
+            line-height: 1.2;
+            font-weight: 400;
+            margin-bottom: 24px;
+            text-transform: uppercase;
+        }
+
+        .hero-title-area h1 span {
+            display: block;
+            font-size: 1.5rem;
+            font-family: var(--font-sans);
+            color: var(--color-accent);
+            letter-spacing: 0.1em;
+            margin-bottom: 16px;
+            font-weight: 700;
+        }
+
+        .hero-intro-text {
+            font-size: 1.15rem;
+            color: var(--color-text-secondary);
+            line-height: 1.8;
+            border-left: 2px solid var(--color-accent);
+            padding-left: 24px;
+        }
+
+        /* Philosophy & Mission Section (Editorial Two-Column) */
+        .philosophy-section {
+            padding: 120px 0;
+            background-color: var(--color-bg-secondary);
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .philosophy-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 80px;
+        }
+
+        .section-label {
+            font-family: var(--font-editorial);
+            font-size: 1rem;
+            letter-spacing: 0.2em;
+            color: var(--color-accent);
+            text-transform: uppercase;
+            position: sticky;
+            top: 120px;
+        }
+
+        .philosophy-content {
+            display: flex;
+            flex-direction: column;
+            gap: 48px;
+        }
+
+        .philosophy-content h2 {
+            font-size: 2rem;
+            font-weight: 700;
+            line-height: 1.4;
+            color: var(--color-text-primary);
+        }
+
+        .philosophy-content p {
+            font-size: 1.05rem;
+            color: var(--color-text-secondary);
+            line-height: 1.8;
+        }
+
+        .statement-box {
+            background-color: var(--color-bg-tertiary);
+            border: 1px solid var(--color-border);
+            padding: 40px;
+            position: relative;
+        }
+
+        .statement-box::before {
+            content: "“";
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-family: var(--font-editorial);
+            font-size: 5rem;
+            color: rgba(197, 168, 128, 0.2);
+            line-height: 1;
+        }
+
+        .statement-box p {
+            position: relative;
+            z-index: 1;
+            font-style: italic;
+            color: var(--color-text-primary);
+        }
+
+        /* Pillars of Analysis (3-Column Grid) */
+        .pillars-section {
+            padding: 120px 0;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .pillars-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .pillars-header {
+            margin-bottom: 64px;
+            text-align: center;
+        }
+
+        .pillars-header h2 {
+            font-family: var(--font-editorial);
+            font-size: 2.5rem;
+            font-weight: 400;
+            margin-bottom: 16px;
+        }
+
+        .pillars-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 32px;
+        }
+
+        .pillar-card {
+            background-color: var(--color-bg-secondary);
+            border: 1px solid var(--color-border);
+            padding: 48px 32px;
+            transition: transform var(--transition-speed), border-color var(--transition-speed);
+        }
+
+        .pillar-card:hover {
+            transform: translateY(-8px);
+            border-color: var(--color-accent);
+        }
+
+        .pillar-num {
+            font-family: var(--font-editorial);
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: rgba(197, 168, 128, 0.3);
+            margin-bottom: 24px;
+            display: block;
+        }
+
+        .pillar-card h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: var(--color-text-primary);
+        }
+
+        .pillar-card p {
+            color: var(--color-text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* Methodology & Standards Section */
+        .methodology-section {
+            padding: 120px 0;
+            background-color: var(--color-bg-secondary);
+        }
+
+        .methodology-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 80px;
+            align-items: center;
+        }
+
+        .methodology-text h2 {
+            font-family: var(--font-editorial);
+            font-size: 2.5rem;
+            font-weight: 400;
+            margin-bottom: 32px;
+        }
+
+        .methodology-text p {
+            font-size: 1.05rem;
+            color: var(--color-text-secondary);
+            line-height: 1.8;
+            margin-bottom: 24px;
+        }
+
+        .methodology-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .methodology-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 16px;
+        }
+
+        .methodology-list li::before {
+            content: "✓";
+            color: var(--color-accent);
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-top: 2px;
+        }
+
+        .methodology-list li div h4 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 4px;
+            color: var(--color-text-primary);
+        }
+
+        .methodology-list li div p {
+            font-size: 0.95rem;
+            color: var(--color-text-muted);
+            margin-bottom: 0;
+        }
+
+        .graphic-container {
+            border: 2px solid var(--color-accent);
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            background-color: var(--color-bg-primary);
+            position: relative;
+        }
+
+        .graphic-item {
+            border-bottom: 1px solid var(--color-border);
+            padding-bottom: 16px;
+        }
+
+        .graphic-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .graphic-label {
+            font-family: var(--font-editorial);
+            font-size: 0.8rem;
+            color: var(--color-accent);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            display: block;
+        }
+
+        .graphic-value {
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: var(--color-text-primary);
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--color-bg-primary);
+            border-top: 1px solid var(--color-border);
+            padding: 80px 0 40px 0;
+        }
+
+        .footer-grid {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 24px;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 64px;
+            margin-bottom: 64px;
+        }
+
+        .footer-brand h3 {
+            font-family: var(--font-editorial);
+            font-size: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            margin-bottom: 16px;
+        }
+
+        .footer-brand h3 span {
+            color: var(--color-accent);
+        }
+
+        .footer-brand p {
+            color: var(--color-text-secondary);
+            font-size: 0.95rem;
+            max-width: 400px;
+            line-height: 1.7;
+        }
+
+        .footer-links h4 {
+            font-family: var(--font-editorial);
+            font-size: 1rem;
+            letter-spacing: 0.1em;
+            color: var(--color-accent);
+            margin-bottom: 24px;
+            text-transform: uppercase;
+        }
+
+        .footer-links ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .footer-links a {
+            color: var(--color-text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color var(--transition-speed);
+        }
+
+        .footer-links a:hover {
+            color: var(--color-accent);
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 24px 0 24px;
+            border-top: 1px solid var(--color-border);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.85rem;
+            color: var(--color-text-muted);
+        }
+
+        /* Responsive Design (768px Breakpoint) */
+        @media (max-width: 992px) {
+            .hero-grid, .philosophy-grid, .methodology-grid {
+                grid-template-columns: 1fr;
+                gap: 48px;
+            }
+
+            .pillars-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .philosophy-grid {
+                gap: 32px;
+            }
+
+            .section-label {
+                position: static;
+                margin-bottom: 16px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .m-nav-2995-label {
+                display: flex;
+            }
+
+            .m-wrap-pmnn-menu {
+                position: fixed;
+                top: 80px;
+                left: 0;
+                width: 100%;
+                height: calc(100vh - 80px);
+                background-color: var(--color-bg-primary);
+                flex-direction: column;
+                justify-content: center;
+                gap: 40px;
+                transform: translateY(-100%);
+                transition: transform var(--transition-speed) ease-in-out;
+                z-index: 999;
+                border-top: 1px solid var(--color-border);
+            }
+
+            #menu-toggle:checked ~ .m-wrap-pmnn-menu {
+                transform: translateY(0);
+            }
+
+            #menu-toggle:checked ~ .m-nav-2995-label span:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+
+            #menu-toggle:checked ~ .m-nav-2995-label span:nth-child(2) {
+                opacity: 0;
+            }
+
+            #menu-toggle:checked ~ .m-nav-2995-label span:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+
+            .hero-title-area h1 {
+                font-size: 2.2rem;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 16px;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header class="r-hero-raj9">
+        <div class="m-wrap-pmnn-container">
+            <a href="/" class="x-head-4g6v">
+                INSIDER<span>.</span>
+            </a>
+            
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="m-nav-2995-label">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <nav class="m-wrap-pmnn-menu">
+                <a href="/" class="m-wrap-pmnn-link">홈</a>
+                <a href="/terminology" class="m-wrap-pmnn-link">용어 사전</a>
+                <a href="/pricing-structure" class="m-wrap-pmnn-link">요금 체계</a>
+                <a href="/about" class="m-wrap-pmnn-link active">소개</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="editorial-hero">
+        <div class="hero-grid">
+            <div class="hero-title-area">
+                <h1><span>ABOUT OUR MISSION</span>베일에 싸인 시장,<br>구조적 왜곡을 정조준하다</h1>
+            </div>
+            <div>
+                <p class="hero-intro-text">
+                    우리는 감상이나 미화를 철저히 배제합니다. 오직 객관적인 구조 분석과 요금 체계의 명확한 분류를 통해 복잡하고 왜곡된 유흥 업종 정보의 비대칭성을 해소하는 것을 목적으로 합니다.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section class="philosophy-section">
+        <div class="philosophy-grid">
+            <div class="section-label">OPERATING PHILOSOPHY</div>
+            <div class="philosophy-content">
+                <h2>불투명한 용어와 모호한 계산법이 지배하는 시장에 명확한 기준을 제시합니다.</h2>
+                <p>
+                    유흥 업계의 정보는 언제나 음성적으로 소비되어 왔습니다. 정형화되지 않은 은어, 업종마다 자의적으로 해석되는 요금 청구 방식은 소비자로 하여금 정보 불균형에 따른 부당한 비용 지출을 유도하기도 합니다. 본 블로그는 이러한 정보 차단을 해소하기 위해 설립된 독립 분석 채널입니다.
+                </p>
+                <div class="statement-box">
+                    <p>
+                        "소비자가 지불하는 비용의 구조를 명확히 이해할 때, 시장의 왜곡은 사라집니다. 우리는 주대, 테이블 차지(TC), 룸티의 정밀한 분해를 통해 가장 객관적인 데이터만을 제공합니다."
+                    </p>
+                </div>
+                <p>
+                    단순한 업소 홍보나 감정적 평가를 유도하는 리뷰를 완전히 배제합니다. 오로지 시스템의 구조, 비용 산정 메커니즘, 그리고 업종별 운영 방식의 본질적인 차이점만을 현미경처럼 들여다봅니다.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pillars of Analysis Section -->
+    <section class="pillars-section">
+        <div class="pillars-wrapper">
+            <div class="pillars-header">
+                <h2>THREE PILLARS</h2>
+                <p class="text-accent">우리가 정보를 다루는 세 가지 철저한 원칙</p>
+            </div>
+            <div class="pillars-grid">
+                <div class="pillar-card">
+                    <span class="pillar-num">01</span>
+                    <h3>용어의 사전적 표준화</h3>
+                    <p>유사하지만 다른 의미로 혼용되는 셔츠룸, 가라오케, 텐프로 등의 세부 업종별 내부 용어를 명확히 분류하고 표준화된 해설을 제공합니다.</p>
+                </div>
+                <div class="pillar-card">
+                    <span class="pillar-num">02</span>
+                    <h3>비용 메커니즘 해체</h3>
+                    <p>기본 주대, 시간당 TC, 룸티, 봉사료(R/T) 등 청구서에 포함되는 모든 세부 항목의 산정 방식을 수학적이고 구조적인 관점에서 분해합니다.</p>
+                </div>
+                <div class="pillar-card">
+                    <span class="pillar-num">03</span>
+                    <h3>철저한 정보 중립성</h3>
+                    <p>특정 업소와의 이해관계를 맺지 않으며, 독자적인 시장 모니터링과 체계적인 조사를 바탕으로 한 객관적 지표만을 기술합니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methodology Section -->
+    <section class="methodology-section">
+        <div class="methodology-grid">
+            <div class="methodology-text">
+                <h2>METHODOLOGY</h2>
+                <p>
+                    본 블로그의 모든 콘텐츠는 임의의 주관적 해석을 배제합니다. 우리는 실제 청구 방식과 업계 표준 가이드라인을 교차 검증하여 구조적 분석 자료를 생산합니다.
+                </p>
+                <ul class="methodology-list">
+                    <li>
+                        <div>
+                            <h4>교차 검증 분석</h4>
+                            <p>다양한 정보원으로부터 수집한 실제 거래 사례와 청구 명세 구조를 대조하여 보편적인 표준 요금선을 도출합니다.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <h4>구조적 메커니즘 규명</h4>
+                            <p>단순 가격 비교를 넘어, 해당 업종이 왜 그러한 요금 체계를 구축하게 되었는지 비즈니스 모델 관점에서 설명합니다.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="graphic-container">
+                <div class="graphic-item">
+                    <span class="graphic-label">TARGET SECTORS</span>
+                    <div class="graphic-value">셔츠룸 / 가라오케 / 레깅스룸 / 텐카페</div>
+                </div>
+                <div class="graphic-item">
+                    <span class="graphic-label">ANALYSIS FOCUS</span>
+                    <div class="graphic-value">주대 산정 방식 & 테이블 차지 구조</div>
+                </div>
+                <div class="graphic-item">
+                    <span class="graphic-label">EDITORIAL STANDARD</span>
+                    <div class="graphic-value">100% 객관적 팩트 기반 기술</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <h3>INSIDER<span>.</span></h3>
+                <p>셔츠룸, 가라오케, 텐프로 등 복잡한 유흥 업종별 용어와 주대, TC, 룸티 등의 요금 체계를 투명하게 비교 분석하는 전문 정보 사전식 블로그입니다.</p>
+            </div>
+            <div class="footer-links">
+                <h4>카테고리</h4>
+                <ul>
+                    <li><a href="/terminology">용어 사전</a></li>
+                    <li><a href="/pricing-structure">요금 체계 분석</a></li>
+                    <li><a href="/about">소개 및 철학</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>분석 기준</h4>
+                <ul>
+                    <li><a href="/about">정보 수집 방법론</a></li>
+                    <li><a href="/about">중립성 선언</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 INSIDER. All Rights Reserved. 본 블로그의 모든 분석 콘텐츠는 지적재산권 보호를 받습니다.</p>
+            <p>투명한 정보 공유 | 구조적 분석 기준</p>
+        </div>
+    </footer>
+
+</body>
+</html>
