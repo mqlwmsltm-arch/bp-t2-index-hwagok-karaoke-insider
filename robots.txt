@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://index.hwagok-karaoke-insider.xyz/sitemap.xml
