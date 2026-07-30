@@ -1,62 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://index.hwagok-karaoke-insider.xyz/about.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://index.hwagok-karaoke-insider.xyz/blog-1.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://index.hwagok-karaoke-insider.xyz/blog-2.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://index.hwagok-karaoke-insider.xyz/blog-3.html</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
     <loc>https://index.hwagok-karaoke-insider.xyz/</loc>
-    <lastmod>2026-07-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://index.hwagok-karaoke-insider.xyz/about.html</loc>
-    <lastmod>2026-07-26</lastmod>
+    <loc>https://index.hwagok-karaoke-insider.xyz/posts/field_note-001-14nv2q.html</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://index.hwagok-karaoke-insider.xyz/blog-1.html</loc>
-    <lastmod>2026-07-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://index.hwagok-karaoke-insider.xyz/blog-2.html</loc>
-    <lastmod>2026-07-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://index.hwagok-karaoke-insider.xyz/blog-3.html</loc>
-    <lastmod>2026-07-26</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.7</priority>
+    <priority>0.6</priority>
   </url>
   <url>
     <loc>https://index.hwagok-karaoke-insider.xyz/posts/field_note-002-16y9r8x.html</loc>
-    <lastmod>2026-07-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://index.hwagok-karaoke-insider.xyz/posts/guide-001-vx36vm.html</loc>
-    <lastmod>2026-07-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://index.hwagok-karaoke-insider.xyz/posts/major_compare-002-142cgw6.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://index.hwagok-karaoke-insider.xyz/posts/major_compare-003-vuct4h.html</loc>
-    <lastmod>2026-07-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://index.hwagok-karaoke-insider.xyz/posts/myth-004-1yybj1z.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://index.hwagok-karaoke-insider.xyz/posts/myth-005-1lcryij.html</loc>
-    <lastmod>2026-07-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://index.hwagok-karaoke-insider.xyz/posts/qa-003-kkx1gg.html</loc>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
     <loc>https://index.hwagok-karaoke-insider.xyz/posts/qa-004-1aaudw5.html</loc>
-    <lastmod>2026-07-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
